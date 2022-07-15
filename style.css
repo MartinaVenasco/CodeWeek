@@ -344,7 +344,7 @@ a {
 
   .filtered-users {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin-top: 50px;
     gap: 90px;
     justify-content: flex-start;
