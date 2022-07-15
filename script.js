@@ -22,7 +22,7 @@ buttonAll.addEventListener("click", function (event) {
     .then((json) => {
       userLi.innerHTML = json
         .map((user) => {
-          return `<div class="card-contact"><div class ="img-container"><img class ="placeholderimg"src="./images/placeholder-02.svg"> <img class="phone" src="./images/phone.svg"></div> <li class="name-number"><h2>${user.name}</h2><h4>${user.phone}</h4><p class="more-info">✉ ${user.email}<br><br><b>STREET: </b>${user.address.street}, ${user.address.suite}<br><br>
+          return `<div class="card-contact"><div class ="img-container"><img class ="placeholderimg" src="./placeholder.svg"> <img class="phone" src="./phone.svg"></div> <li class="name-number"><h2>${user.name}</h2><h4>${user.phone}</h4><p class="more-info">✉ ${user.email}<br><br><b>STREET: </b>${user.address.street}, ${user.address.suite}<br><br>
           <b>CITY: </b>${user.address.city}, ${user.address.zipcode} </p></li></div>
           `;
         })
