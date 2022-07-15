@@ -8,7 +8,6 @@ const button3 = document.querySelector(".F-L");
 const button4 = document.querySelector(".M-Z");
 const showedContact = document.getElementById("show-contacts");
 
-
 buttonAll.addEventListener("click", function (event) {
   event.preventDefault();
   console.log("chiamata api", API_URL);
@@ -22,12 +21,11 @@ buttonAll.addEventListener("click", function (event) {
     .then((json) => {
       userLi.innerHTML = json
         .map((user) => {
-          return `<div class="card-contact"><div class ="img-container"><img class ="placeholderimg" src="./placeholder.svg"> <img class="phone" src="./phone.svg"></div> <li class="name-number"><h2>${user.name}</h2><h4>${user.phone}</h4><p class="more-info">✉ ${user.email}<br><br><b>STREET: </b>${user.address.street}, ${user.address.suite}<br><br>
+          return `<div class="card-contact"><div class ="img-container"><img class ="placeholderimg" src="./placeholder.png"> <img class="phone" src="./phone.png"></div> <li class="name-number"><h2>${user.name}</h2><h4>${user.phone}</h4><p class="more-info">✉ ${user.email}<br><br><b>STREET: </b>${user.address.street}, ${user.address.suite}<br><br>
           <b>CITY: </b>${user.address.city}, ${user.address.zipcode} </p></li></div>
           `;
         })
         .join(" ");
-        
     });
 });
 
@@ -53,7 +51,7 @@ button2.addEventListener("click", function (event) {
 
       userLi.innerHTML = filteredAE
         .map((user) => {
-          return `<div class="card-contact"><div class ="img-container"><img class ="placeholderimg"src="./images/placeholder-02.svg"> <img class="phone" src="./images/phone.svg"></div> <li class="name-number"><h2>${user.name}</h2><h4>${user.phone}</h4><p class="more-info">✉ ${user.email}<br><br><b>STREET: </b>${user.address.street}, ${user.address.suite}<br><br>
+          return `<div class="card-contact"><div class ="img-container"><img class ="placeholderimg" src="./placeholder.png"> <img class="phone" src="./phone.png"></div> <li class="name-number"><h2>${user.name}</h2><h4>${user.phone}</h4><p class="more-info">✉ ${user.email}<br><br><b>STREET: </b>${user.address.street}, ${user.address.suite}<br><br>
           <b>CITY: </b>${user.address.city}, ${user.address.zipcode} </p></li></div>
           `;
         })
@@ -86,7 +84,7 @@ button3.addEventListener("click", function (event) {
 
       userLi.innerHTML = filteredFL
         .map((user) => {
-          return `<div class="card-contact"><div class ="img-container"><img class ="placeholderimg"src="./images/placeholder-02.svg"> <img class="phone" src="./images/phone.svg"></div> <li class="name-number"><h2>${user.name}</h2><h4>${user.phone}</h4><p class="more-info">✉ ${user.email}<br><br><b>STREET: </b>${user.address.street}, ${user.address.suite}<br><br>
+          return `<div class="card-contact"><div class ="img-container"><img class ="placeholderimg" src="./placeholder.png"> <img class="phone" src="./phone.png"></div> <li class="name-number"><h2>${user.name}</h2><h4>${user.phone}</h4><p class="more-info">✉ ${user.email}<br><br><b>STREET: </b>${user.address.street}, ${user.address.suite}<br><br>
           <b>CITY: </b>${user.address.city}, ${user.address.zipcode} </p></li></div>
           `;
         })
@@ -125,7 +123,7 @@ button4.addEventListener("click", function (event) {
 
       userLi.innerHTML = filteredMZ
         .map((user) => {
-          return `<div class="card-contact"><div class ="img-container"><img class ="placeholderimg"src="./images/placeholder-02.svg"> <img class="phone" src="./images/phone.svg"></div> <li class="name-number"><h2>${user.name}</h2><h4>${user.phone}</h4><p class="more-info">✉ ${user.email}<br><br><b>STREET: </b>${user.address.street}, ${user.address.suite}<br><br>
+          return `<div class="card-contact"><div class ="img-container"><img class ="placeholderimg" src="./placeholder.png"> <img class="phone" src="./phone.png"></div> <li class="name-number"><h2>${user.name}</h2><h4>${user.phone}</h4><p class="more-info">✉ ${user.email}<br><br><b>STREET: </b>${user.address.street}, ${user.address.suite}<br><br>
           <b>CITY: </b>${user.address.city}, ${user.address.zipcode} </p></li></div>
           `;
         })

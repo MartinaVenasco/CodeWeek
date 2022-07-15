@@ -21,7 +21,8 @@ header {
 }
 
 .logo {
-  width: 280px;
+  width: 290px;
+  height: 200px;
   height: 130px;
 }
 .buttons-container {
@@ -193,6 +194,7 @@ h1 {
 }
 .phone {
   width: 20px;
+  height: 20px;
   padding-bottom: 2px;
 }
 footer {
@@ -224,7 +226,7 @@ a {
   border: 0px;
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 768px) {
   header {
     display: flex;
     flex-direction: row;
@@ -234,7 +236,7 @@ a {
   }
 
   .logo {
-    width: 600px;
+    width: 800px;
     height: 300px;
   }
 
@@ -383,6 +385,7 @@ a {
   }
   .phone {
     width: 20px;
+    height: 20px;
     padding-bottom: 2px;
   }
   footer {
